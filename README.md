@@ -1,11 +1,11 @@
-## lua-pam
-A module for lua  to use PAM.
+## lua-pam FOR LUA 5.3
+A module for **Lua 5.3** to use PAM.
 
-## Complile
+## Compile
 ```shell
 cmake . -B build
-cd build
-make
+make -C build
+sudo make install
 ```
 
 ## Installation through package manager
@@ -15,10 +15,10 @@ make
 The package [`lua-pam-git`](https://aur.archlinux.org/packages/lua-pam-git/) can be installed from the Arch Linux User Repository using the following command. The command assumes your package manager is `yay`.
 
 ```
-yay -S lua-pam-git
+yay -S lua53-pam-git
 ```
 
-The file `liblua_pam.so` is installed into `/usr/lib/lua-pam/`.
+The file `liblua_pam.so` is installed into `/usr/lib/lua/5.3`.
 
 ## Usage
 ```lua
